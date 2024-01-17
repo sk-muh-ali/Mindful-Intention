@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GSAP CND -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- FONT AWESOME CND -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- STYLE SHEET -->
+    <link rel="stylesheet" href="assets/css/books.css">
+    <!-- SCROLL CND -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+    <!-- TITAL -->
+    <title>Mindful Intention</title>
+    <!-- FAVIVCON -->
+    <link rel="shortcut icon" href="/assets/img/logo/logo.svg" type="image/x-icon">
+</head>
+<style>
+    body {
+        background-color: #d6d6d6;
+    }
+
+    main {
+        margin-top: 10%;
+        height: 100vh;
+    }
+
+    #demo1 {
+        display: block;
+        height: 400px;
+    }
+
+    #demo2 {
+        display: block;
+        height: 400px;
+        margin: 100px auto;
+    }
+
+    h1.desc {
+        background-color: #FFF;
+        border: 2px solid #2D2D2D;
+        padding: 10px;
+        color: #FF6719;
+        margin-left: 20px;
+    }
+
+    #demo1-desc h1:not(:first-child) {
+        display: none;
+    }
+
+    #demo2 img {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+        -o-filter: grayscale(0);
+    }
+</style>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <div class="logo">
+                    <img src="/assets/img/logo/logo.svg" alt="" width="8%">
+                    <h1>Mindful <span> Intention</span></h1>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Aerobic <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="poses.html" class="dropdown__link"> Poses By Type</a>
+                            </li>
+
+                            <li>
+                                <a href="pbbenifit.html" class="dropdown__link">
+                                    Poses By benefit
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pbg.html" class="dropdown__link">
+                                    Poses By general
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pba.html" class="dropdown__link">
+                                    Poses By anatomy
+                                </a>
+                            </li>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="mediation.html" class="nav__link">Mediation</a></li>
+                <li><a href="books.html" class="nav__link">Books</a></li>
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        ABOUT <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                        <li>
+                            <a href="about.html" class="dropdown__link">
+                                ABOUT
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="pri.html" class="dropdown__link">
+                                Privacy Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Testimonial.html" class="dropdown__link">
+                                Testimonial
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- BOOKS carouseL-->
+    <main>
+        <div id="demo1-desc">
+            <h1 class="desc" id="slide0">Mediation Books <a href="/assets/books/managing_mediation_process.pdf">Download
+                    Now</a></h1>
+            <h1 class="desc" id="slide1">Downward Facing Dog Pose books <a
+                    href="/assets/books/managing_mediation_process.pdf">Download Now</a></h1>
+            <h1 class="desc" id="slide2">I am slide 3</h1>
+            <h1 class="desc" id="slide3">I am slide 4</h1>
+            <h1 class="desc" id="slide4">I am slide 5</h1>
+            <h1 class="desc" id="slide5">I am slide 6</h1>
+            <h1 class="desc" id="slide6">I am slide 7</h1>
+        </div>
+        <div class="skd-carousel" id="demo1">
+            <img src="/assets/img/books/mediation.webp" />
+            <img src="/assets/img/books/downward poses.jpg" />
+            <img src="/assets/img/books/yoga.jpg" />
+            <img src="/assets/img/books/the-concise-book-of-yoga-anatomy.jpg" />
+            <img src="/assets/img/books/largepreview.png" />
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="/assets/img/logo/logo.svg" alt="" width="4%">
+            <h1>Mindful Intention</h1>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="poses.html">Aerobic</a></li>
+                    <li><a href="mediation.html">Mediation</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <div class="footer-font">
+                        <li><a href="https://www.facebook.com/profile.php?id=100065356577203"><i class="fa-brands fa-facebook-f" style="color: #fff;"></i></a></li>
+                        <li><a href="https://www.instagram.com/mindfulintentions/"><i class="fa-brands fa-instagram" style="color: #fff;"></i></a></li>
+                        <li><a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter" style="color: #fff;"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" style="color: #fff;"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copy-rights">
+        <hr>
+        <div class="headding">
+            <p>Copyright &copy; 2k23 by Muhammad Ali Group C | <span>Aptech.pk</span></p>
+        </div>
+        <!-- SCRIPT -->
+        <script src="/assets/JS/books.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+            integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+            integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="/assets/JS/gsap.js"></script>
+        <script type="text/javascript">
+            new SKDCarousel({ selector: 'demo1' }).onCenter(function (number) {
+                var descs = document.querySelectorAll('h1.desc');
+                for (var i = 0; i < descs.length; i++) {
+                    descs[i].style.display = 'none';
+                }
+                document.getElementById('slide' + number).style.display = 'block';
+            });
+
+            new SKDCarousel({ selector: 'demo2', width: 200, height: 200, auto: true });
+        </script>
+
+</body>
+
+</html>
